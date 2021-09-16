@@ -1,8 +1,5 @@
-/**
-* Template Name: NewBiz - v4.3.0
-* Template URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+/*
+Goodnews Daniel
 */
 (function() {
   "use strict";
@@ -241,5 +238,13 @@
       mirror: false
     })
   });
+
+  // Copyright Information
+  function footer_set(){
+    let selector = document.querySelector('.copyright');
+    let content = `2019 -  ${new Date().getFullYear()} Copyright &copy; <strong>SALT CONSULT LIMITED.</strong> All Rights Reserved.`;
+    selector.innerHTML = content;
+}
+footer_set();
 
 })()
