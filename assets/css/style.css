@@ -575,10 +575,7 @@ section {
 #about {
   background: #fff;
   padding: 60px 0;
-  border: 2px ridge var(--color-primary-light);
   margin-top: -90px;
-
-  /* clip-path: polygon(100% 0, 100% 88%, 40% 94%, 0 100%, 0 0); */
 }
 
 .about-header {
@@ -689,6 +686,15 @@ section {
 #services {
   padding: 60px 0 40px 0;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  margin-top: -20px;
+}
+#services .section-header h3 {
+  margin-top: -10px;
+}
+
+#services .section-header p {
+  text-align: justify;
+  margin-bottom: 0;
 }
 
 #services .box {
@@ -709,18 +715,20 @@ section {
 
 #services .icon {
   position: absolute;
-  left: -15px;
+  /* left: -15px; */
+  left: 15px;
   top: calc(50% - 32px);
 }
 
 #services .icon i {
   font-size: 64px;
+  font-size: 54px;
   line-height: 0;
   transition: 0.5s;
 }
 
 #services .title {
-  margin-left: 40px;
+  margin-left: 60px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
@@ -736,9 +744,10 @@ section {
 
 #services .description {
   font-size: 14px;
-  margin-left: 40px;
+  margin-left: 60px;
   line-height: 24px;
   margin-bottom: 0;
+  text-align: justify;
 }
 
 #why-us {
@@ -750,10 +759,13 @@ section {
 #why-us .section-header p {
   color: #fff;
 }
+#why-us .section-header p {
+  text-align: justify;
+}
 
 #why-us .card {
   background: var(--color-primary);
-  border-color: var(--color-primary);
+  border-color: var(--color-primary-light);
   border-radius: 10px;
   margin: 0 15px;
   padding: 15px 0;
@@ -771,7 +783,10 @@ section {
 
 #why-us .card:hover {
   background: var(--color-primary-light);
-  border-color: var(--color-primary-light);
+  border-color: var(--color-primary);
+  box-shadow: 0 10px 10px var(--color-primary);
+  transform: scale(1.1);
+  transition: all 0.4s;
 }
 
 #why-us .card i {
@@ -788,6 +803,7 @@ section {
 #why-us .card p {
   font-size: 15px;
   color: #d8eafe;
+  text-align: justify;
 }
 
 #why-us .card .readmore {
@@ -795,7 +811,7 @@ section {
   font-weight: 600;
   display: inline-block;
   transition: 0.3s ease-in-out;
-  border-bottom: #00458f solid 2px;
+  border-bottom: #041d36 solid 2px;
 }
 
 #why-us .card .readmore:hover {
