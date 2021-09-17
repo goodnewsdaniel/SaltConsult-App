@@ -1,0 +1,19 @@
+{
+  "name": "salt_web_app",
+  "version": "1.0.0",
+  "description": "A webs app for Salt Consult Limited",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goodnewsdaniel/SaltConsult-App.git"
+  },
+  "author": "Goodnews Daniel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goodnewsdaniel/SaltConsult-App/issues"
+  },
+  "homepage": "https://github.com/goodnewsdaniel/SaltConsult-App#readme"
+}
