@@ -1,10 +1,11 @@
 {
   "name": "salt_web_app",
   "version": "1.0.0",
-  "description": "A webs app for Salt Consult Limited",
+  "description": "A web app for Salt Consult Limited",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.mjs",
+    "start": "node server.mjs"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/goodnewsdaniel/SaltConsult-App/issues"
   },
-  "homepage": "https://github.com/goodnewsdaniel/SaltConsult-App#readme"
+  "homepage": "https://github.com/goodnewsdaniel/SaltConsult-App#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
 }
