@@ -22,7 +22,6 @@ contactForm.addEventListener("submit", (e)=>{
 
   let xhr =  XMLHttpRequest();
   xhr.open("POST", "/");
-
   xhr.setRequestHeader("content-type", "application/json");
 
   xhr.onload = function(){
@@ -34,7 +33,7 @@ contactForm.addEventListener("submit", (e)=>{
       email.value = "";
       subject.value = "";
       message.value = "";
-    } else{
+    }else{
       alert("Something went wrong.");
     }
   }

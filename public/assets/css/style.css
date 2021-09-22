@@ -19,6 +19,30 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/*///////////////////////////////
+/////// CUSTOM SCROLLBAR
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-light);
+}
+
 a {
   color: var(--color-primary);
   text-decoration: none;
@@ -363,6 +387,7 @@ h6 {
     var(--color-primary)
   );
   background-size: cover;
+  background-blend-mode: saturation;
   padding: 200px 0 120px 0;
   height: 95vh;
 
@@ -939,8 +964,15 @@ section {
   text-align: center;
   margin-bottom: 20px;
   position: relative;
+  /* height: 100px;
+  width: 100px; */
   border-radius: 50%;
   overflow: hidden;
+}
+
+#team .member img {
+  height: 15rem;
+  width: 15rem;
 }
 
 #team .member .member-info {

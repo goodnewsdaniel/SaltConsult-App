@@ -242,7 +242,7 @@ Goodnews Daniel
   // Copyright Information
   function footer_set(){
     let selector = document.querySelector('.copyright');
-    let content = `2019 -  ${new Date().getFullYear()} Copyright &copy; <strong>SALT CONSULT LIMITED.</strong> All Rights Reserved.`;
+    let content = `Copyright &copy; 2019 -  ${new Date().getFullYear()} <strong>SALT CONSULT LIMITED.</strong> All Rights Reserved.`;
     selector.innerHTML = content;
 }
 footer_set();
